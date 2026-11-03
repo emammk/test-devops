@@ -4,7 +4,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Read the region from environment variables (defaults to us-east-1)
-AWS_REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
+AWS_REGION = os.environ.get("AWS_DEFAULT_REGION", "ap-south-1")
 
 # Connect to the live AWS DynamoDB Service
 dynamodb = boto3.resource("dynamodb", region_name=AWS_REGION)
